@@ -1,6 +1,8 @@
-import { User } from "../../entities/users";
+import { User } from '../../entities';
 
-export interface UsersRepository {
+interface UsersRepository {
   getUser(userId: number): Promise<User>;
   getInformation(accessToken: string): Promise<User>;
 }
+
+export { UsersRepository };

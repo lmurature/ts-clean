@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
-import { User } from '../../core/entities/users';
-import { UsersRepository } from '../../core/repositories/mercadolibre';
+import { User } from '../../core/entities';
+import { UsersRepository } from '../../core/repositories';
 
 class UsersRepositoryImpl implements UsersRepository {
   async getUser(userId: number): Promise<User> {
